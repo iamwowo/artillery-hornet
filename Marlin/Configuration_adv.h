@@ -3758,7 +3758,7 @@
   #define CUSTOM_MENU_MAIN_ONLY_IDLE // Only show custom menu when the machine is idle
 
   #define MAIN_MENU_ITEM_1_DESC "Level Bed & Save"
-  #define MAIN_MENU_ITEM_1_GCODE "G28\nG29 T\nM500\nM104 S0\nM140 S0" // Home > Level Bed > Store settings > Set Hotend 0°C > Set Bed 0°C
+  #define MAIN_MENU_ITEM_1_GCODE "G28\nG29 T\nM500\nM104 S0\nM140 S0" // Home > Set Hotend 150°C > Set Bed 60°C > Level Bed > Store settings > Set Hotend 0°C > Set Bed 0°C
 
   #define MAIN_MENU_ITEM_2_DESC "Hotend & Bed 0°C"
   #define MAIN_MENU_ITEM_2_GCODE "M104 S0\nM140 S0" // Set Hotend 0°C > Set Bed 0°C

@@ -37,10 +37,10 @@ For original README.md please visit [MarilnFirmware/Mariln](https://github.com/M
 - `#define EXTRA_PROBING 1`
 - `#define Z_CLEARANCE_BETWEEN_PROBES 3`
 - `#define Z_CLEARANCE_MULTI_PROBE 3`
+- `#define GRID_MAX_POINTS_X 7`
 - `#define PREHEAT_BEFORE_LEVELING`
 - `#define LEVELING_NOZZLE_TEMP 150`
 - `#define LEVELING_BED_TEMP 60`
-- `#define GRID_MAX_POINTS_X 7`
 
 #### Other
 
