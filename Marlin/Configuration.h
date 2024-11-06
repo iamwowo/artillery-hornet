@@ -1198,7 +1198,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 408 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 429 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1573,8 +1573,8 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 2
-#define EXTRA_PROBING 1
+//#define MULTIPLE_PROBING 1
+//#define EXTRA_PROBING 1
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1924,7 +1924,7 @@
 /**
  * Auto-leveling needs preheating
  */
-#define PREHEAT_BEFORE_LEVELING
+// #define PREHEAT_BEFORE_LEVELING
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
   #define LEVELING_NOZZLE_TEMP 150 // (°C) Only applies to E0 at this time
   #define LEVELING_BED_TEMP 60
@@ -1989,7 +1989,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 7
+  #define GRID_MAX_POINTS_X 5
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
@@ -2246,13 +2246,13 @@
 //
 #define PREHEAT_1_LABEL         "PLA+"
 #define PREHEAT_1_TEMP_HOTEND   205
-#define PREHEAT_1_TEMP_BED      60
+#define PREHEAT_1_TEMP_BED      65
 #define PREHEAT_1_TEMP_CHAMBER  35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL         "PLA"
 #define PREHEAT_2_TEMP_HOTEND   200
-#define PREHEAT_2_TEMP_BED      60
+#define PREHEAT_2_TEMP_BED      65
 #define PREHEAT_2_TEMP_CHAMBER  35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
@@ -2264,7 +2264,7 @@
 
 #define PREHEAT_4_LABEL         "PETG"
 #define PREHEAT_4_TEMP_HOTEND   240
-#define PREHEAT_4_TEMP_BED      80
+#define PREHEAT_4_TEMP_BED      85
 #define PREHEAT_4_TEMP_CHAMBER  35
 #define PREHEAT_4_FAN_SPEED     0 // Value from 0 to 255
 

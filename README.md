@@ -33,19 +33,19 @@ For original README.md please visit [MarilnFirmware/Mariln](https://github.com/M
 - `#define Z_SAFE_HOMING`
 - `#define XY_PROBE_FEEDRATE (150*60)`
 - `#define Z_PROBE_FEEDRATE_FAST (10*60)`
-- `#define MULTIPLE_PROBING 2`
-- `#define EXTRA_PROBING 1`
 - `#define Z_CLEARANCE_BETWEEN_PROBES 3`
 - `#define Z_CLEARANCE_MULTI_PROBE 3`
-- `#define GRID_MAX_POINTS_X 7`
-- `#define PREHEAT_BEFORE_LEVELING`
-- `#define LEVELING_NOZZLE_TEMP 150`
-- `#define LEVELING_BED_TEMP 60`
+- `#define GRID_MAX_POINTS_X 5`
+
+#### Linear advance
+
+- `#define LIN_ADVANCE`
+- `#define ADVANCE_K 1.00`
 
 #### Other
 
 - `#define HOMING_FEEDRATE_MM_M { (100*60), (100*60), (30*60) }`
-- `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 408 }` - My steps/mm
+- `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 429 }` - My steps/mm
 
 ### [Configuration_adv.h](./Marlin/Configuration_adv.h)
 
@@ -55,10 +55,10 @@ For original README.md please visit [MarilnFirmware/Mariln](https://github.com/M
 - `#define BABYSTEP_ZPROBE_OFFSET`
 - `#define BLTOUCH_DELAY 300`
 - `#define BLTOUCH_HS_MODE true`
-- `#define PROBING_MARGIN_LEFT 40`
-- `#define PROBING_MARGIN_RIGHT 40`
-- `#define PROBING_MARGIN_FRONT 40`
-- `#define PROBING_MARGIN_BACK 40`
+- `#define PROBING_MARGIN_LEFT 50`
+- `#define PROBING_MARGIN_RIGHT 50`
+- `#define PROBING_MARGIN_FRONT 50`
+- `#define PROBING_MARGIN_BACK 50`
 
 #### OctoPrint
 
