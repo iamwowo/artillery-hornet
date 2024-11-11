@@ -64,6 +64,8 @@ For original README.md please visit [MarilnFirmware/Mariln](https://github.com/M
 #### OctoPrint
 
 - `#define HOST_ACTION_COMMANDS`
+- `#define HOST_PROMPT_SUPPORT`
+- `#define HOST_STATUS_NOTIFICATIONS`
 
 #### Custom Menu
 
